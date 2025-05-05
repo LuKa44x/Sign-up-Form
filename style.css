@@ -21,7 +21,7 @@ body{
 }
 .left-sideBar{
     position: relative;
-    height: 100vh;
+    /* height: 100vh; */
     width: 30%;
     display: flex;
     justify-content: center;
@@ -30,11 +30,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.089);
+    border-radius: 25px;
     position: absolute;
     top: 15%;
     width: 100%;
-    min-width: 220px ;
+     min-width: 220px ; /*mm */
 }
 
 .logoContainer > h1{
@@ -50,6 +51,7 @@ body{
     bottom:0;
     font-size: 18px;
     font-weight: bold;
+    margin:15% 0;
 }
 a:link{
     text-decoration: none;
@@ -57,4 +59,89 @@ a:link{
 }
 a:visited{
     color: white;
+}
+
+.container{
+    background-color: rgba(127, 255, 212, 0.4);
+    border-radius: 25px;
+    width: 100vw;
+    margin:25px;
+}
+.bodyContainer{
+    padding:0 25px;
+}
+.textContainer{
+    margin-bottom:30px;
+    margin-top:30px; 
+    font-size: 22px;
+}
+
+.signUpTitle{
+    margin-bottom:20px;
+    font-size: 25px;
+}
+.signUpForm{
+    background-color: rgba(255, 255, 255, 0.849);
+    padding: 25px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:0 100px;
+}
+.signUpForm>div{
+    min-width:400px;
+    display: flex;
+    flex-direction: column;
+
+}
+.signUpForm>div>label{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0;
+
+}
+.signUpForm>div>input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+}
+
+input[type="submit"]{
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+input[type="submit"]:hover{
+    background-color: #45a049;
+}
+
+.signUpForm+ input[type="submit"]{
+    margin-top:30px;
+}
+#logIn{
+    margin-top:30px;
+    font-size:large;
+}
+#logIn > span > a{
+    color: #0b214b;
+    font-weight: bold;
+}
+input:invalid:not(:placeholder-shown){
+    border: 1px solid red;
+}
+input[type]:hover{
+    border: 1px solid rgb(127, 255, 212);
+}
+input[type]:focus{
+    border: 1px solid rgb(0, 47, 255);
+    outline: none;
+}
+input[type]:valid{
+    border: 1px solid green;
 }
