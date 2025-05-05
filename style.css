@@ -17,5 +17,44 @@ body{
     margin: 0;
     padding: 0;
     display: flex;
+    box-sizing: border-box;
+}
+.left-sideBar{
+    position: relative;
+    height: 100vh;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+.logoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    min-width: 220px ;
+}
 
+.logoContainer > h1{
+    color: white;
+    font-family: NorseBold, sans-serif;
+    font-size: 80px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+}
+.left-sideBar > p{
+    color:white;
+    position: absolute;
+    bottom:0;
+    font-size: 18px;
+    font-weight: bold;
+}
+a:link{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+    color: white;
 }
